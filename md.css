@@ -1,0 +1,75 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+html, body { background-color: white; }
+html { height: 100%; }
+body { font-family: 'Open Sans', sans-serif; min-height: 100%; font-size: 14px; padding: 0 10% 0 15%; line-height: 1.3em; }
+
+.tline { position: fixed; top: 0; height: 4px; right: 0; left: 0; background-color: #198F6F; }
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+del { color: #ccc; }
+
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 3em 0 1em 0; line-height: 1em; }
+
+h1 { font-weight: 300; font-size: 4em; margin-top: .75em; }
+h2 { font-weight: 400; font-size: 2em; }
+h3 { font-weight: 600; font-size: 1.5em; }
+h4 { font-weight: 200; font-size: 1.35em; }
+h5 { font-weight: 300; font-size: 1em; }
+h6 { font-weight: 200; font-size: 1em; }
+
+p { margin: 1em 0; }
+
+pre { border: 1px dotted #aaa; background-color: #efefef; margin: 1em 0; overflow: auto; font-family: monospace; }
+code { font-family: monospace; background-color: #ffffdd; }
+
+pre > code { background-color: transparent; }
+
+ol, ul { margin: 1em 3em; }
+
+ul { list-style: square; }
+ol { list-style-type: decimal-leading-zero; }

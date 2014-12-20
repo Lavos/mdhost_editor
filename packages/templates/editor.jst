@@ -1,0 +1,25 @@
+<header>
+	<form>
+		<p><input type="text" id="filename"/> <button id="write_button" disabled>Write</button></p>
+	</form>
+</header>
+
+<article>
+	<form>
+		<div class="pane_master">
+			<div class="preview pane">
+				<h2 class="edit_header">Preview</h2>
+
+				<div id="preview_target"></div>
+			</div><!-- /.preview.pane -->
+
+			<div class="edit pane">
+				<h2 class="edit_header">Editor</h2>
+				<p>Editing: <span id="current_file"></span></p>
+				<p><select id="revisions"></select></p>
+				<p><textarea></textarea></p>
+				<p><button id="save_button">Save Revision</button></p>
+			</div><!-- /.edit.pane -->
+		</div><!-- /.pane_master -->
+	</form>
+</article>

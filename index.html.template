@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Vertical Mass &not; Markdown Host</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,600,800,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="{{ if .IsProduction }}output.css?{{ .CSS_SHA }}{{ else }}output.css{{ end }}"/>
+
+	<script>
+		(function(w, d, c, t, p, a){
+			w[c] = w[c] || function(){ (w[c].q = w[c].q || [])[p](arguments) };
+			w[c][p] = w[c][p] || w[c];
+			var n = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			n.async = true; n.src = '{{ if .IsProduction }}output.js?{{ .JS_SHA }}{{ else }}output.js{{ end }}';
+			s.parentNode.insertBefore(n, s);
+		})(window, document, '{{ .LibraryName }}', 'script', 'push');
+	</script>
+</head>
+
+<body>
+	<div id="master">
+	</div><!-- /#master -->
+
+	<script>
+		{{ .LibraryName }}(['editor'], function(Editor){
+				var e = new Editor;
+				console.log(e);
+
+				document.getElementById('master').appendChild(e.el);
+			}
+		);
+	</script>
+
+	<div class="tline"></div>
+</body>
+</html>
