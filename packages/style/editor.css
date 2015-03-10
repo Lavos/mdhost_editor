@@ -54,6 +54,7 @@ body, html { background-color: #efefef; }
 	.editor .pane { width: 49%; min-width: 400px; box-sizing: border-box; }
 	.editor .preview.pane { float: left; padding: 0 10px; }
 	.editor .edit.pane { float: right; padding: 0 10px; }
+		.editor .edit.pane p { margin: 0 0 1em 0; }
 
 	.editor textarea { width: 100%; height: 500px; box-sizing: border-box; padding: 5px; font-family: monospace; font-size: 12px; }
 	.editor #preview_target { background-color: white; border: 1px dotted #ccc; padding: 15px; }
